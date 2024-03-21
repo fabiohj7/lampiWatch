@@ -155,6 +155,7 @@ from pybleno import Bleno
 from device_info_service import DeviceInfoService
 from number_service import SomeNumberService
 import time
+import socket
 
 
 class DemoBLEPeripheral():
@@ -177,7 +178,7 @@ class DemoBLEPeripheral():
         print('on -> stateChange: ' + state)
 
         if (state == 'poweredOn'):
-            self.bleno.startAdvertising('Lampi-Test',
+            self.bleno.startAdvertising(socket.gethostname(),
                                         [
                                             self.info_service.uuid,
                                             self.number_service.uuid]

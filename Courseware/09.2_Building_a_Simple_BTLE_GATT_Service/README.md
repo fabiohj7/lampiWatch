@@ -30,6 +30,7 @@ Creat a new file **ble_demo.py**:
 from pybleno import Bleno
 from device_info_service import DeviceInfoService
 import time
+import socket
 
 
 class DemoBLEPeripheral():
@@ -51,7 +52,7 @@ class DemoBLEPeripheral():
         print('on -> stateChange: ' + state)
 
         if (state == 'poweredOn'):
-            self.bleno.startAdvertising('Lampi-Test',
+            self.bleno.startAdvertising(socket.gethostname(),
                                         [
                                             self.info_service.uuid,]
                                         )
@@ -72,7 +73,7 @@ def main():
     ble_peripheral = DemoBLEPeripheral()
     ble_peripheral.start()
 
-    while not stopflag:
+    while True:
         time.sleep(1)
 
     print("\nStopping BLE peripheral\n")
@@ -87,7 +88,7 @@ if __name__ == "__main__":
 
 You will see that we are requiring a new file **device_info_service.py**.  The `__init__` constructs a instance of the service, passing in a Manufacturer Name (`'CWRU'`), a Model Name (`'LAMPI'`) and a Serial Number (`'123456'`) as variables. We will create that file shortly.
 
-Just as in our iBeacon example, we register hanlders for two  events:  `'stateChange'` and `'advertisingStart'`.  In our handler for `'stateChange'` we are calling `'startAdvertising()'` passing in a friendly service name ('Lampi-Test') a list of Service UUIDs to advertise (with only one element in the list).
+Just as in our iBeacon example, we register hanlders for two  events:  `'stateChange'` and `'advertisingStart'`.  In our handler for `'stateChange'` we are calling `'startAdvertising()'` passing in a friendly service name (`socket.gethostname()` should resolve to your unique LAMPI hostname with the deviceID - e.g., `'LAMPI-b827ebb9372e'`) and a list of Service UUIDs to advertise (with only one element in the list).
 
 Unlike in our handler example for the iBeacon, our handler for `'advertisingStart'`, calls `setServices()` with our list of Service Objects.  This makes the services available, allowing BTLE Centrals to connect to the services and interact with their Characteristics.
 
@@ -123,7 +124,7 @@ If you use `LightBlue` you should see your Device show up - you can connect to i
 
 ![](Images/lightblue_device_info_no_characteristics.png)
 
-You can see the device is Connectable, the the device's Local Name is "Lampi-Test" and it is advertising the "Device Information" Service, but there is no information within the Device Information Service.  Let's fix that.
+You can see the device is Connectable, the the device's Local Name (something like `'LAMPI-b827ebb9372e'`,  and it is advertising the "Device Information" Service, but there is no information within the Device Information Service.  Let's fix that.
 
 Modify `device_info_service.py` to add a Characteristic, like so:
 
