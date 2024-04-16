@@ -1,12 +1,11 @@
-//
 //  LampiView.swift
 //  Lampi
-//
 
 import SwiftUI
 
 struct LampiView: View {
     @Bindable var lamp: Lampi
+    @StateObject var watchConnector = WatchConnector()
 
     @Environment(\.presentationMode) var mode: Binding<PresentationMode>
 
@@ -70,7 +69,7 @@ struct LampiView: View {
 }
 
 #Preview {
-    LampiView(lamp: Lampi(name: "LAMPI b827ebccda1f"))
+    LampiView(lamp: Lampi(name: "LAMPI_b827eb974fee"))
         .previewDevice("iPhone 15 Pro")
         .previewLayout(.device)
 }
