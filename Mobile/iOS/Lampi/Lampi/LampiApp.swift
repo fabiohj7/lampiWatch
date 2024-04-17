@@ -7,7 +7,7 @@ import SwiftUI
 
 @main
 struct LampiApp: App {
-    let DEVICE_NAME = "LAMPI_b827eb974fee"
+    let DEVICE_NAME = "LAMPI-b827eb974fee"
     let USE_BROWSER = false
 
     var body: some Scene {

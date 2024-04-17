@@ -2,12 +2,19 @@
 //  Lampi
 
 import SwiftUI
+import Combine
 
 struct LampiView: View {
     @Bindable var lamp: Lampi
     @StateObject var watchConnector = WatchConnector()
+    @State private var isOn = false
+    private var cancellables = Set<AnyCancellable>()
 
     @Environment(\.presentationMode) var mode: Binding<PresentationMode>
+    
+    init(lamp: Lampi) {
+        self._lamp = Bindable(lamp)
+    }
 
     var body: some View {
         VStack {
@@ -42,6 +49,10 @@ struct LampiView: View {
             }.padding(.horizontal)
 
             Button(action: {
+                // Change toggle locally
+                isOn.toggle()
+                
+                // Update lamp's isOn property
                 lamp.state.isOn = !lamp.state.isOn
             }) {
                 HStack {
@@ -55,6 +66,14 @@ struct LampiView: View {
             .foregroundColor(lamp.state.isOn ? lamp.state.color : .gray)
             .background(Color.black.edgesIgnoringSafeArea(.bottom))
             .frame(height: 100)
+            .onReceive(watchConnector.isOnPublisher.receive(on: DispatchQueue.main)) { isOnFromWatch in
+                // Update isOn based on message received from Watch
+                DispatchQueue.main.async{
+                    isOn = isOnFromWatch
+                }
+               // Update lamp's isOn property
+                lamp.state.isOn = isOn
+            }
         }
         .disabled(!lamp.state.isConnected)
         .navigationBarBackButtonHidden(true)

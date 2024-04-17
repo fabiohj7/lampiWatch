@@ -15,6 +15,7 @@ struct ContentView: View {
             Button(action: {
                 // Toggle the values isOn
                 self.isOn.toggle()
+                sendToiOS()
             }) {
                 // Display the button text based on isOn value
                 Text(isOn ? "Turn Off" : "Turn On")

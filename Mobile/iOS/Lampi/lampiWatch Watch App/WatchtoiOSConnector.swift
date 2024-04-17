@@ -3,7 +3,6 @@
 //  lampiWatch Watch App
 //
 //  Created by Fabio Hinojosa on 4/16/24.
-//
 
 import Foundation
 import WatchConnectivity
@@ -26,7 +25,9 @@ class WatchToiOSConnector: NSObject, WCSessionDelegate, ObservableObject {
     func sendInfoToIOs(isOn: Bool) {
         if session.isReachable {
             let data: [String: Any] = ["isOn" : isOn]
-            session.sendMessage(data, replyHandler: nil)
+            session.sendMessage(data, replyHandler: nil) { error in
+                print(error.localizedDescription)
+            }
         } else {
             print("Session is not printable")
         }
