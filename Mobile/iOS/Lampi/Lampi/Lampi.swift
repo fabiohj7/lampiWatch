@@ -1,7 +1,5 @@
-//
 //  Lampi.swift
 //  Lampi
-//
 
 import Foundation
 import CoreBluetooth
@@ -119,7 +117,7 @@ extension Lampi {
 
 extension Lampi {
     struct State: Equatable {
-        var isConnected = false
+        var isConnected = true
         var isOn = false
         var hue: Double = 0.0
         var saturation: Double = 1.0

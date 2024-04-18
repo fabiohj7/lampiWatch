@@ -7,6 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0A6E18302BCED3A800741813 /* Lampi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 858B9BE42549E2A000A43AC3 /* Lampi.swift */; };
+		0A6E18312BCF033800741813 /* WatchConnectivity.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A7C16162BCEBFA00021BEAF /* WatchConnectivity.framework */; };
+		0A72949D2BCEC66600CE9304 /* lampiWatchApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A72949C2BCEC66600CE9304 /* lampiWatchApp.swift */; };
+		0A72949F2BCEC66600CE9304 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A72949E2BCEC66600CE9304 /* ContentView.swift */; };
+		0A7294A12BCEC66800CE9304 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0A7294A02BCEC66800CE9304 /* Assets.xcassets */; };
+		0A7294A42BCEC66800CE9304 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0A7294A32BCEC66800CE9304 /* Preview Assets.xcassets */; };
+		0A7294A72BCEC66800CE9304 /* lampiWatch Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 0A72949A2BCEC66600CE9304 /* lampiWatch Watch App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		0A7294AC2BCEC6AF00CE9304 /* WatchToiOSConnector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A7294AB2BCEC6AF00CE9304 /* WatchToiOSConnector.swift */; };
+		0A7C16142BCEBF3C0021BEAF /* WatchConnector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A7C16132BCEBF3C0021BEAF /* WatchConnector.swift */; };
+		0A838CB02BCEC98300346A24 /* WatchConnectivity.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A7C16162BCEBFA00021BEAF /* WatchConnectivity.framework */; };
 		8516E57B256447D300E819F6 /* LampiBrowserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8516E57A256447D300E819F6 /* LampiBrowserView.swift */; };
 		8516E57F2564514D00E819F6 /* LampiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8516E57E2564514D00E819F6 /* LampiManager.swift */; };
 		854D43B9255B2CD600565A15 /* GradientSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 854D43B8255B2CD600565A15 /* GradientSlider.swift */; };
@@ -17,7 +27,40 @@
 		858B9BE52549E2A000A43AC3 /* Lampi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 858B9BE42549E2A000A43AC3 /* Lampi.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		0A7294A52BCEC66800CE9304 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 858B9BC92549D7A400A43AC3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0A7294992BCEC66600CE9304;
+			remoteInfo = "lampiWatch Watch App";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		0A79E9E72BCDC5BB00C2C5A0 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				0A7294A72BCEC66800CE9304 /* lampiWatch Watch App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		0A6E18342BCF55F700741813 /* lampiWatch-Watch-App-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "lampiWatch-Watch-App-Info.plist"; sourceTree = SOURCE_ROOT; };
+		0A72949A2BCEC66600CE9304 /* lampiWatch Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "lampiWatch Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0A72949C2BCEC66600CE9304 /* lampiWatchApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = lampiWatchApp.swift; sourceTree = "<group>"; };
+		0A72949E2BCEC66600CE9304 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		0A7294A02BCEC66800CE9304 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0A7294A32BCEC66800CE9304 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		0A7294AB2BCEC6AF00CE9304 /* WatchToiOSConnector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchToiOSConnector.swift; sourceTree = "<group>"; };
+		0A7C16132BCEBF3C0021BEAF /* WatchConnector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchConnector.swift; sourceTree = "<group>"; };
+		0A7C16162BCEBFA00021BEAF /* WatchConnectivity.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WatchConnectivity.framework; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS10.2.sdk/System/Library/Frameworks/WatchConnectivity.framework; sourceTree = DEVELOPER_DIR; };
 		8516E57A256447D300E819F6 /* LampiBrowserView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LampiBrowserView.swift; sourceTree = "<group>"; };
 		8516E57E2564514D00E819F6 /* LampiManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LampiManager.swift; sourceTree = "<group>"; };
 		854D43B8255B2CD600565A15 /* GradientSlider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientSlider.swift; sourceTree = "<group>"; };
@@ -31,16 +74,54 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		0A7294972BCEC66600CE9304 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0A838CB02BCEC98300346A24 /* WatchConnectivity.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		858B9BCE2549D7A400A43AC3 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0A6E18312BCF033800741813 /* WatchConnectivity.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0A72949B2BCEC66600CE9304 /* lampiWatch Watch App */ = {
+			isa = PBXGroup;
+			children = (
+				0A6E18342BCF55F700741813 /* lampiWatch-Watch-App-Info.plist */,
+				0A72949C2BCEC66600CE9304 /* lampiWatchApp.swift */,
+				0A72949E2BCEC66600CE9304 /* ContentView.swift */,
+				0A7294A02BCEC66800CE9304 /* Assets.xcassets */,
+				0A7294A22BCEC66800CE9304 /* Preview Content */,
+				0A7294AB2BCEC6AF00CE9304 /* WatchToiOSConnector.swift */,
+			);
+			path = "lampiWatch Watch App";
+			sourceTree = "<group>";
+		};
+		0A7294A22BCEC66800CE9304 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				0A7294A32BCEC66800CE9304 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		0A7C16152BCEBFA00021BEAF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0A7C16162BCEBFA00021BEAF /* WatchConnectivity.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		8516E5782564479B00E819F6 /* Views */ = {
 			isa = PBXGroup;
 			children = (
@@ -55,7 +136,9 @@
 			isa = PBXGroup;
 			children = (
 				858B9BD32549D7A400A43AC3 /* Lampi */,
+				0A72949B2BCEC66600CE9304 /* lampiWatch Watch App */,
 				858B9BD22549D7A400A43AC3 /* Products */,
+				0A7C16152BCEBFA00021BEAF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -63,6 +146,7 @@
 			isa = PBXGroup;
 			children = (
 				858B9BD12549D7A400A43AC3 /* Lampi.app */,
+				0A72949A2BCEC66600CE9304 /* lampiWatch Watch App.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -77,6 +161,7 @@
 				858B9BD82549D7A700A43AC3 /* Assets.xcassets */,
 				858B9BDD2549D7A700A43AC3 /* Info.plist */,
 				858B9BDA2549D7A700A43AC3 /* Preview Content */,
+				0A7C16132BCEBF3C0021BEAF /* WatchConnector.swift */,
 			);
 			path = Lampi;
 			sourceTree = "<group>";
@@ -92,6 +177,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		0A7294992BCEC66600CE9304 /* lampiWatch Watch App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0A7294A82BCEC66800CE9304 /* Build configuration list for PBXNativeTarget "lampiWatch Watch App" */;
+			buildPhases = (
+				0A7294962BCEC66600CE9304 /* Sources */,
+				0A7294972BCEC66600CE9304 /* Frameworks */,
+				0A7294982BCEC66600CE9304 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "lampiWatch Watch App";
+			productName = "lampiWatch Watch App";
+			productReference = 0A72949A2BCEC66600CE9304 /* lampiWatch Watch App.app */;
+			productType = "com.apple.product-type.application";
+		};
 		858B9BD02549D7A400A43AC3 /* Lampi */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 858B9BE02549D7A700A43AC3 /* Build configuration list for PBXNativeTarget "Lampi" */;
@@ -99,10 +201,12 @@
 				858B9BCD2549D7A400A43AC3 /* Sources */,
 				858B9BCE2549D7A400A43AC3 /* Frameworks */,
 				858B9BCF2549D7A400A43AC3 /* Resources */,
+				0A79E9E72BCDC5BB00C2C5A0 /* Embed Watch Content */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				0A7294A62BCEC66800CE9304 /* PBXTargetDependency */,
 			);
 			name = Lampi;
 			productName = Lampi;
@@ -116,9 +220,12 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = YES;
-				LastSwiftUpdateCheck = 1210;
+				LastSwiftUpdateCheck = 1520;
 				LastUpgradeCheck = 1520;
 				TargetAttributes = {
+					0A7294992BCEC66600CE9304 = {
+						CreatedOnToolsVersion = 15.2;
+					};
 					858B9BD02549D7A400A43AC3 = {
 						CreatedOnToolsVersion = 12.1;
 					};
@@ -138,11 +245,21 @@
 			projectRoot = "";
 			targets = (
 				858B9BD02549D7A400A43AC3 /* Lampi */,
+				0A7294992BCEC66600CE9304 /* lampiWatch Watch App */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		0A7294982BCEC66600CE9304 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0A7294A42BCEC66800CE9304 /* Preview Assets.xcassets in Resources */,
+				0A7294A12BCEC66800CE9304 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		858B9BCF2549D7A400A43AC3 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -155,12 +272,24 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		0A7294962BCEC66600CE9304 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0A6E18302BCED3A800741813 /* Lampi.swift in Sources */,
+				0A72949F2BCEC66600CE9304 /* ContentView.swift in Sources */,
+				0A7294AC2BCEC6AF00CE9304 /* WatchToiOSConnector.swift in Sources */,
+				0A72949D2BCEC66600CE9304 /* lampiWatchApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		858B9BCD2549D7A400A43AC3 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				854D43B9255B2CD600565A15 /* GradientSlider.swift in Sources */,
 				858B9BD72549D7A400A43AC3 /* LampiView.swift in Sources */,
+				0A7C16142BCEBF3C0021BEAF /* WatchConnector.swift in Sources */,
 				858B9BE52549E2A000A43AC3 /* Lampi.swift in Sources */,
 				8516E57F2564514D00E819F6 /* LampiManager.swift in Sources */,
 				858B9BD52549D7A400A43AC3 /* LampiApp.swift in Sources */,
@@ -170,7 +299,86 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		0A7294A62BCEC66800CE9304 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0A7294992BCEC66600CE9304 /* lampiWatch Watch App */;
+			targetProxy = 0A7294A52BCEC66800CE9304 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
+		0A7294A92BCEC66800CE9304 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"lampiWatch Watch App/Preview Content\"";
+				DEVELOPMENT_TEAM = 8R6GTH6F72;
+				ENABLE_PREVIEWS = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "lampiWatch-Watch-App-Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = lampiWatch;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = com.Fabio.final;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Fabio.final.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 10.2;
+			};
+			name = Debug;
+		};
+		0A7294AA2BCEC66800CE9304 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"lampiWatch Watch App/Preview Content\"";
+				DEVELOPMENT_TEAM = 8R6GTH6F72;
+				ENABLE_PREVIEWS = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "lampiWatch-Watch-App-Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = lampiWatch;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = com.Fabio.final;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Fabio.final.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 10.2;
+			};
+			name = Release;
+		};
 		858B9BDE2549D7A700A43AC3 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -292,11 +500,12 @@
 		858B9BE12549D7A700A43AC3 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"Lampi/Preview Content\"";
-				DEVELOPMENT_TEAM = 7MFK7RS5UT;
+				DEVELOPMENT_TEAM = 8R6GTH6F72;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = Lampi/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
@@ -304,7 +513,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = edu.case.cxn201.Lampi;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Fabio.final;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -314,11 +523,12 @@
 		858B9BE22549D7A700A43AC3 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"Lampi/Preview Content\"";
-				DEVELOPMENT_TEAM = 7MFK7RS5UT;
+				DEVELOPMENT_TEAM = 8R6GTH6F72;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = Lampi/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
@@ -326,7 +536,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = edu.case.cxn201.Lampi;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Fabio.final;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -336,6 +546,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		0A7294A82BCEC66800CE9304 /* Build configuration list for PBXNativeTarget "lampiWatch Watch App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0A7294A92BCEC66800CE9304 /* Debug */,
+				0A7294AA2BCEC66800CE9304 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		858B9BCC2549D7A400A43AC3 /* Build configuration list for PBXProject "Lampi" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
