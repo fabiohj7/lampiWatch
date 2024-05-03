@@ -117,7 +117,7 @@ extension Lampi {
 
 extension Lampi {
     struct State: Equatable {
-        var isConnected = true
+        var isConnected = false
         var isOn = false
         var hue: Double = 0.0
         var saturation: Double = 1.0

@@ -8,8 +8,8 @@ import Foundation
 import WatchConnectivity
 
 class WatchToiOSConnector: NSObject, WCSessionDelegate, ObservableObject {
-    
     var session: WCSession
+    @Published var receivedMessage: [String: Any]?
     
     init(session: WCSession = .default) {
         self.session = session
@@ -22,10 +22,15 @@ class WatchToiOSConnector: NSObject, WCSessionDelegate, ObservableObject {
         
     }
     
-    func sendInfoToIOs(isOn: Bool) {
+    func session(_ session: WCSession, didReceiveMessage message: [String : Any]) {
+        print("Received message from iPhone: \(message)")
+        receivedMessage = message
+    }
+    
+    
+    func sendInfoToIOs(info: [String: Any]) {
         if session.isReachable {
-            let data: [String: Any] = ["isOn" : isOn]
-            session.sendMessage(data, replyHandler: nil) { error in
+            session.sendMessage(info, replyHandler: nil) { error in
                 print(error.localizedDescription)
             }
         } else {

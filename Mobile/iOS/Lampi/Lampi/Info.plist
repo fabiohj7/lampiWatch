@@ -24,6 +24,8 @@
 	<true/>
 	<key>NSBluetoothAlwaysUsageDescription</key>
 	<string>Connect to Lampi via bluetooth</string>
+	<key>NSHealthShareUsageDescription</key>
+	<string>Please allow Lampi access to enjoy features</string>
 	<key>UIApplicationSceneManifest</key>
 	<dict>
 		<key>UIApplicationSupportsMultipleScenes</key>

@@ -7,7 +7,8 @@ import SwiftUI
 
 @main
 struct LampiApp: App {
-    let DEVICE_NAME = "LAMPI-b827eb974fee"
+    @StateObject var manager = HealthKitManager()
+    let DEVICE_NAME = "LAMPI-b827eb9a43ca"
     let USE_BROWSER = false
 
     var body: some Scene {

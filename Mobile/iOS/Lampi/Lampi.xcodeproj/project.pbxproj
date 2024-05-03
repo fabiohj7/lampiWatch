@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0A1D38EC2BE41272009194E7 /* HealthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A1D38EB2BE41272009194E7 /* HealthManager.swift */; };
 		0A6E18302BCED3A800741813 /* Lampi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 858B9BE42549E2A000A43AC3 /* Lampi.swift */; };
 		0A6E18312BCF033800741813 /* WatchConnectivity.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A7C16162BCEBFA00021BEAF /* WatchConnectivity.framework */; };
 		0A72949D2BCEC66600CE9304 /* lampiWatchApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A72949C2BCEC66600CE9304 /* lampiWatchApp.swift */; };
@@ -52,6 +53,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		0A1D38EB2BE41272009194E7 /* HealthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthManager.swift; sourceTree = "<group>"; };
+		0A1D38ED2BE4146D009194E7 /* Lampi.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Lampi.entitlements; sourceTree = "<group>"; };
 		0A6E18342BCF55F700741813 /* lampiWatch-Watch-App-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "lampiWatch-Watch-App-Info.plist"; sourceTree = SOURCE_ROOT; };
 		0A72949A2BCEC66600CE9304 /* lampiWatch Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "lampiWatch Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0A72949C2BCEC66600CE9304 /* lampiWatchApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = lampiWatchApp.swift; sourceTree = "<group>"; };
@@ -154,10 +157,12 @@
 		858B9BD32549D7A400A43AC3 /* Lampi */ = {
 			isa = PBXGroup;
 			children = (
+				0A1D38ED2BE4146D009194E7 /* Lampi.entitlements */,
 				858B9BD42549D7A400A43AC3 /* LampiApp.swift */,
 				8516E5782564479B00E819F6 /* Views */,
 				858B9BE42549E2A000A43AC3 /* Lampi.swift */,
 				8516E57E2564514D00E819F6 /* LampiManager.swift */,
+				0A1D38EB2BE41272009194E7 /* HealthManager.swift */,
 				858B9BD82549D7A700A43AC3 /* Assets.xcassets */,
 				858B9BDD2549D7A700A43AC3 /* Info.plist */,
 				858B9BDA2549D7A700A43AC3 /* Preview Content */,
@@ -294,6 +299,7 @@
 				8516E57F2564514D00E819F6 /* LampiManager.swift in Sources */,
 				858B9BD52549D7A400A43AC3 /* LampiApp.swift in Sources */,
 				8516E57B256447D300E819F6 /* LampiBrowserView.swift in Sources */,
+				0A1D38EC2BE41272009194E7 /* HealthManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -503,6 +509,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Lampi/Lampi.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"Lampi/Preview Content\"";
 				DEVELOPMENT_TEAM = 8R6GTH6F72;
@@ -526,6 +533,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Lampi/Lampi.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"Lampi/Preview Content\"";
 				DEVELOPMENT_TEAM = 8R6GTH6F72;
